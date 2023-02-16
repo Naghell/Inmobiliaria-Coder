@@ -208,6 +208,13 @@
     text-align: left;
 }
 
+.prop__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .prop__item {
     display: flex;
     flex-wrap: wrap;
@@ -215,14 +222,17 @@
     width: 275px;
     height: 350px;
     margin: 15px 15px;
+    padding: 0 !important;
     border-radius: 20px;
     background: #D9D9D9;
+    object-fit: contain;
 }
 
 .prop__item img {
     border-radius: 20px 20px 0 0;
     height: 65%;
-    width: 100%;
+    width: 1000px;
+    object-fit: fill;
     background-size: cover;
 }
 
