@@ -438,10 +438,29 @@ footer a:hover {
     text-align: center;
 }
 
+.social__container__nav {
+    display: none;
+    visibility: collapse;
+}
+
+.social__container__nav a {
+    margin: 20px;
+}
+
 
 @media screen and (max-width: 490px) {
     .copyright__wrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    .social__wrapper {
+        display: none;
+        visibility: collapse;
+    }
+
+    .social__container__nav {
+        display: flex;
+        visibility: visible;
     }
 }
