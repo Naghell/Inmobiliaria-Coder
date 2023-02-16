@@ -339,10 +339,8 @@ footer a:hover {
 }
 
 .section__text {
-    font-family: Montserrat, serif;
-    font-weight: 500;
-    font-size: 1.25rem;
     color: #fff;
+    max-width: 600px;
 }
 
 .section__img {
