@@ -1,75 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inmobiliaria</title>
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    </head>
-    <body>
-        <header>
-            <div class="social__wrapper">
-                <div class="social__container">
-                    <a class="social__item" href=""><img src="../images/facebook.svg" alt="Facebook" height="25"
-                            width="25"></a>
-                    <a class="social__item" href=""><img src="../images/instagram.svg" alt="Instagram" height="25"
-                            width="25"></a>
-                    <a class="social__item" href=""><img src="../images/whatsapp.svg" alt="WhatsApp" height="25"
-                            width="25"></a>
-                </div>
-                <div class="night__container">
-                    <a href=""><img src="../images/dark-mode.svg" alt="Modo oscuro" height="25" width="25"></a>
-                </div>
-            </div>
-            <nav class="nav__wrapper">
-                <ul class="nav__container">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="../pages/propiedades.html">PROPIEDADES</a></li>
-                    <li><a href="../pages/tasaciones.html">TASACIONES</a></li>
-                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inmobiliaria</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="social__wrapper">
+        <div class="social__container">
+          <a class="social__item" href=""
+            ><img
+              src="../images/icon__fb.svg"
+              alt="Facebook"
+              height="25"
+              width="25"
+          /></a>
+          <a class="social__item" href=""
+            ><img
+              src="../images/icon__ig.svg"
+              alt="Instagram"
+              height="25"
+              width="25"
+          /></a>
+          <a class="social__item" href=""
+            ><img
+              src="../images/icon__wh.svg"
+              alt="WhatsApp"
+              height="25"
+              width="25"
+          /></a>
+        </div>
+        <div class="night__container">
+          <a href=""
+            ><img
+              src="../images/icon__dark.svg"
+              alt="Modo oscuro"
+              height="25"
+              width="25"
+          /></a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md nav__wrapper">
+        <div class="container-fluid nav__container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarTogglerDemo01"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sobre-nosotros.html"
+                  >SOBRE NOSOTROS</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PROPIEDADES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Alquileres</a></li>
+                  <li><a class="dropdown-item" href="#">Ventas</a></li>
                 </ul>
-            </nav>
-            <div class="hero">
-                <div class="hero__background"></div>
-                <img class="hero__logo" src="../images/logo.png" alt="Logo" height=200 width="500">
-            </div>
-            <div class="wrapper__container">
-                <p class="wrapper__title">CONTACTO</p>
-            </div>
-        </header>
-        <main class="page__container">
-            <form class="form__container">
-                <div class="form__desc">
-                    <h1>Envíanos un mensaje</h1>
-                    <p>Completa el formulario para contactarnos sobre cualquier pregunta o comentario que tengas y nos contactaremos a la brevedad</p>
-                </div>
-                <input placeholder="Nombre y apellido *" type="text" id="first_name" name="first_name">
-                <input placeholder="Teléfono *" type="tel" id="phone" name="phone">
-                <input placeholder="Email *" type="email" id="email" name="email">
-                <select name="motivo">
-                    <option selected disabled>Motivo de la consulta *</option>
-                    <option value="Alquiler">Alquiler</option>
-                    <option value="Venta">Compra</option>
-                    <option value="Casa">Venta</option>
-                    <option value="Departamento">Tasación</option>
-                </select>
-                <textarea name="consult" rows="10" placeholder="Detalle su consulta *">
-                </textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </main>
-        <footer>
-            <div class="info__wrapper">
-                <p class="info__text">📍 Av. Armenia 1283</p>
-                <p class="info__text">📞+54-351-7697713</p>
-            </div>
-            <div class="copyright__wrapper">
-                <p class="footer__text">Inmobiliaria 2023 © | Developed by</p><a href="https://www.linkedin.com/in/renzo-luis-battaglino-a5a329191/" target="_blank">Renzo Battaglino</a>
-            </div>
-        </footer>
-    </body>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tasaciones.html"
+                  >TASACIONES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero__background"></div>
+        <img
+          class="hero__logo img-fluid"
+          src="../images/hero__logo.png"
+          alt="Logo"
+          height="200"
+          width="500"
+        />
+      </div>
+      <div class="prop__wrapper">
+        <div class="container-fluid">
+          <p class="wrapper__title fs-4">CONTACTO</p>
+        </div>
+      </div>
+    </header>
+    <main class="page__container">
+      <form class="form__container">
+        <div class="form__desc">
+          <h1>Envíanos un mensaje</h1>
+          <p>
+            Completa el formulario para contactarnos sobre cualquier pregunta o
+            comentario que tengas y nos contactaremos a la brevedad
+          </p>
+        </div>
+        <input
+          placeholder="Nombre y apellido *"
+          type="text"
+          id="first_name"
+          name="first_name"
+        />
+        <input placeholder="Teléfono *" type="tel" id="phone" name="phone" />
+        <input placeholder="Email *" type="email" id="email" name="email" />
+        <select name="motivo">
+          <option selected disabled>Motivo de la consulta *</option>
+          <option value="Alquiler">Alquiler</option>
+          <option value="Venta">Compra</option>
+          <option value="Casa">Venta</option>
+          <option value="Departamento">Tasación</option>
+        </select>
+        <textarea name="consult" rows="10" placeholder="Detalle su consulta *">
+        </textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 info__wrapper">
+          <p class="info__text">📍 Av. Armenia 1283</p>
+        </div>
+        <div class="col-md-6 info__wrapper">
+          <p class="info__text">📞+54-351-7697713</p>
+        </div>
+        <div class="col-md-12 copyright__wrapper">
+          <p class="footer__text">Inmobiliaria 2023 © | Developed by</p>
+          <a
+            href="https://www.linkedin.com/in/renzo-luis-battaglino-a5a329191/"
+            target="_blank"
+            >Renzo Battaglino</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
