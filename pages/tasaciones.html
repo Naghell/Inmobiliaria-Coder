@@ -80,51 +80,61 @@
       </div>
     </div>
   </header>
-  <main class="page__container">
-    <section class="section__container">
-      <p class="section__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
-        sem ac tristique imperdiet. Curabitur ut dui sit amet metus vulputate
-        bibendum eu et lacus. Vivamus turpis quam, feugiat a luctus vitae,
-        maximus a augue. Integer non metus sit amet magna auctor rutrum eget
-        elementum ante. Nunc efficitur euismod diam, sed egestas arcu rutrum
-        ac. Donec vel massa feugiat, placerat nunc vel, euismod ligula. Mauris
-        porttitor ut erat nec bibendum. Etiam sit amet nulla felis.
-        Suspendisse vitae ante congue, ornare nisi a, pulvinar odio. Sed
-        auctor tellus vitae ipsum aliquet, a pretium elit vulputate. Sed in
-        hendrerit augue. Morbi ornare imperdiet rutrum. Etiam ultricies eu
-        diam eget malesuada. Praesent gravida non lorem et finibus. Nullam
-        viverra, odio eu bibendum blandit, nisl magna tempus nunc, eget
-        gravida metus massa non purus. Mauris ullamcorper massa at elit
-        imperdiet, et mattis est auctor. Pellentesque bibendum metus eu orci
-        sodales dignissim. Donec non sagittis justo, et vulputate orci. Nullam
-        metus eros, molestie et orci eu, blandit tincidunt urna. Aliquam
-        volutpat, lacus at tincidunt iaculis, nulla sem ornare erat, eu
-        bibendum nisl mauris vitae diam. Nunc suscipit nisi ut rutrum
-        bibendum. Sed congue bibendum venenatis. Suspendisse vulputate cursus
-        odio quis elementum. Ut et suscipit ante. Phasellus sit amet lacinia
-        metus, nec ullamcorper massa. Morbi sed turpis sit amet diam placerat
-        accumsan id ac dolor. In lobortis, tellus id ullamcorper bibendum,
-        quam massa iaculis lacus, mollis tempus purus neque in turpis. In
-        vitae mi dui. Donec ornare, quam et bibendum scelerisque, mauris sem
-        sagittis magna, non lacinia libero ex ut dui. Phasellus eu dapibus
-        nulla, placerat vulputate eros. Fusce aliquam leo ut ex posuere
-        sollicitudin. Fusce vitae volutpat dolor. Fusce ex neque, condimentum
-        at ultrices id, mattis ut mi. Donec ac auctor leo, in blandit mi.
-        Suspendisse quis varius risus, et sollicitudin tortor. Fusce aliquet
-        turpis enim, a tempus massa euismod eget. Praesent orci justo, mattis
-        non arcu eu, placerat commodo odio. Cras turpis neque, ornare eu lacus
-        sit amet, ullamcorper congue est. In et molestie odio. Sed a faucibus
-        nulla. Vestibulum luctus nunc sit amet luctus ultrices. Fusce nisi
-        urna, placerat sodales lacinia sed, imperdiet nec nisi. Quisque sit
-        amet nunc vel sapien aliquet eleifend vitae non eros. Cras id eros eu
-        mauris imperdiet efficitur. Mauris lacinia erat a arcu fringilla
-        vehicula. Phasellus urna libero, ultricies ut blandit accumsan,
-        vestibulum nec nulla. Nullam et magna nec ex congue feugiat. Fusce ac
-        mauris hendrerit, molestie eros non, accumsan turpis. Praesent ut
-        vulputate nulla. Vivamus viverra justo in fermentum faucibus.
-      </p>
-    </section>
+  <main class="container-fluid page__container">
+    <div class="section__container row">
+      <div class="col-md-7 d-flex justify-content-center">
+        <div class="card mb-3 card-bg" style="max-width: 1000px">
+          <div class="row g-0">
+            <div class="col-md-12">
+              <div class="card-body">
+                <h2 class="fs-4 card-title">Si desea vender o alquilar su propiedad, debe conocer su valor real en el mercado. 
+                  Realizamos tasaciones, para venta o alquiler, de los siguientes inmuebles:</h2>
+                <ul>
+                  <li class="card-text">
+                    Departamentos
+                  </li>
+                  <li class="card-text">
+                    Casas
+                  </li>
+                  <li class="card-text">
+                    Departamentos tipo casa, o PH
+                  </li>
+                  <li class="card-text">
+                    Oficinas
+                  </li>
+                  <li class="card-text">
+                    Cocheras
+                  </li>
+                  <li class="card-text">
+                    Locales comerciales
+                  </li>
+                  <li class="card-text">
+                    Terrenos
+                  </li>
+                  <li class="card-text">
+                    Depósitos
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 d-flex justify-content-center">
+        <form class="form__container">
+          <input placeholder="Nombre y apellido *" type="text" id="first_name" name="first_name" />
+          <input placeholder="Teléfono *" type="tel" id="phone" name="phone" />
+          <input placeholder="Email *" type="email" id="email" name="email" />
+          <select name="motivo">
+            <option selected disabled>Motivo de la consulta *</option>
+            <option value="Departamento">Tasación</option>
+          </select>
+          <textarea name="consult" rows="10" placeholder="Detalle su consulta *">
+            </textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
   </main>
   <footer class="container-fluid">
     <div class="row">
